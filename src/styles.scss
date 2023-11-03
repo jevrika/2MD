@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  margin: 0 auto;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #FAFAFA;
+
+
+
+
+}
+
+*{
+  box-sizing:border-box;
+}
+
+.container{
+  margin:104px;
+  background-color: #FFF;
+  max-width: 428px;
+  width: 100%;
+
+}
+
+.form__content{
+ padding:32px;
+ width: 100%;
+ max-width: 428px;
+
+}
+
+// Email
+
+.email__box{
+  margin-bottom:16px;
+}
+
+.email__text{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+}
+
+.email__input{
+  margin-top:4px;
+  display: flex;
+  padding: 12px 14px 12px 12px;
+  align-items: flex-start;
+  width: 100%;
+  border: #FAFAFA;
+  background: var(--gray-600, #FAFAFA);
+}
+::placeholder {
+  color:#BAB9BD;
+  
+}
+
+// Password
+.password__box{
+margin-bottom:35px;
+}
+
+.password__text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.password__input{
+  display: flex;
+  margin-top:4px;
+  padding: 12px 14px 12px 12px;
+  align-items: flex-start;
+  width: 100%;
+
+  border: #FAFAFA;
+  background: var(--gray-600, #FAFAFA);
+
+}
+
+//Switch
+
+.switch__box{
+  display: flex;
+  align-items: center;
+}
+
+.switch__text {
+  margin-left:8px;
+  color: var(--gray-100, #484848);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 16px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider.round {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #FD7918;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(11px);
+}
+
+//submit
+
+.sign-in__box{
+  margin:32px 0;
+}
+
+.submit__input{
+  display: flex;
+  padding: 12px 48px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  width: 100%;
+  border:#651FFF;
+  background: var(--purple-100, #651FFF);
+  color:#FFFFFF
+}
+
+//forgot password
+
+.forgot-passwords__box{
+  display: flex;
+  justify-content: center;
+  margin-bottom:32px;
+}
+
+.forgot-password__text{
+  color:#651FFF;
+}
+
+//Line
+
+.line-line {
+  border-radius: 10px;
+  height: 2px;
+  border:#ECECEE;
+  background: var(--gray-400, #ECECEE);
+}
+
+//Other Sign in 
+
+.other-sign-up__box{
+   display:flex;
+  justify-content: center; 
+}
+.other-sign-in__header {
+  color: var(--gray-50, #5A5761);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+  margin-bottom:16px;
+}
+
+.google__button, .facebook__button {
+  padding: 12px 73px;
+  border-radius: 5px;
+  border: 1px solid var(--gray-400, #ECECEE);
+  background: var(--White, #FFF); 
+
+}
+
+.other-sign-in-btn__box {
+  display: flex;
+  justify-content: space-between; 
+  
+}
+
+.google__button__img, .facebook__button__img{
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.test p{
+  background-color: red;;
+}
