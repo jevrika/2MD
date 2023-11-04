@@ -204,10 +204,13 @@ input:checked + .slider:before {
 
 .google__button,
 .facebook__button {
-  padding: 12px 73px;
+  width:100%;
+  padding: 12px 48px;
   border-radius: 5px;
   border: 1px solid var(--gray-400, #ececee);
   background: var(--White, #fff);
+  display: flex;
+  justify-content: center;
 }
 
 .other-sign-in-btn__box {
@@ -733,3 +736,33 @@ input:checked + .slider:before {
   line-height: 24px;
 }
 
+@media screen and (max-width: 600px) {
+
+  .form__content{
+    padding:16px;
+  }
+
+  .second-form-info-row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second-form-column,.second-form-checkbox-column{
+    width:100%
+  }
+
+  .second-form__container,.first-form__container{
+    margin: 104px;
+    background-color: #fff;
+    max-width: 343px;
+    width: 100%;
+    padding: 0;
+
+  }
+  .second-form-checkbox__content {
+    width: 100%;
+  }
+
+
+  
+}
