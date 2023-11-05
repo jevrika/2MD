@@ -1,0 +1,129 @@
+.button {
+  padding: 12px 48px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #4d19be;
+    color: var(--c--primary);
+  }
+
+  &.button--primary {
+    background-color: var(--c-button-surface);
+    border: var(--c-button-surface);
+    color: var(--c--primary);
+  }
+
+  &.button--primary-wider {
+    width: 100%;
+    background-color: var(--c-button-surface);
+    border: var(--c-button-surface);
+    color: var(--c--primary);
+  }
+
+  &.button--secondary {
+    background-color: var(--c--surface);
+    border: var(--c-button-surface);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      background-color: #d4d0d0;
+    }
+  }
+}
+
+.heading1 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.heading--smaller {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.text1 {
+  color: var(--c--primary);
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 15px;
+}
+
+.header__box {
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  &.header__box--smaller {
+    margin-bottom: 16px;
+  }
+}
+
+.info__input {
+  border-radius: 5px;
+  border: var(--c--surface);
+  background: var(--c--surface);
+  display: flex;
+  padding: 12px 14px 12px 12px;
+  gap: 4px;
+  width: 100%;
+}
+
+.info__box {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 4px;
+}
+
+.info__box--wide {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+}
+
+.info__box--right-side {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  width: 100%;
+}
+.input__content {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 32px;
+}
+
+.text__box {
+  display: inline-flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.info__name{
+  font-weight: 600;
+  font-size: 16px;;
+}
+
+.info__item{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+
+.content__box{
+  padding: 32px;
+  width: 100%;
+  max-width: 665px;
+}
+
+.container{
+  margin: 104px;
+  background-color: var(--c--primary);
+  max-width: 665px;
+  width: 100%;
+  padding: 0;
+}
